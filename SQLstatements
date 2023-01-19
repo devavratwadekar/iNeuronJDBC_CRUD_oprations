@@ -1,0 +1,24 @@
+
+create database and use :-
+	use sample;
+
+create table:-
+	create table students(
+		sid int(4) AUTO_INCREMENT PRIMARY key,
+		sname VARCHAR(20) not null,
+		sage varchar(3),
+		saddress varchar(20) 
+	);
+
+insert statement:-
+	insert into students(`sname`,`sage`,`saddress`)values('subodh',20,'Mumbai');
+
+select stmt:-
+	select sid,sname,sage,saddress from students;
+
+update stmt:-
+	update students set sname='Pranav' where sid = 1;
+	update students set sname='Pranav' and sage = 19 where sid = 1;
+
+delete stmt:-
+	delete from students where sid=1
